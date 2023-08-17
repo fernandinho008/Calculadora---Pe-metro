@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA - PERÍMETRO</title>
+</head>
+<body>
+    <script>
+        let tipo = prompt('Selecione a Forma que irá calcular o perímetro: Quadrado, Retângulo, Circulo, Triângulo')
+        let lado;
+        let base;
+        let altura;
+        let pi;
+        let resultado;
+        let raio;
+
+        if (tipo == 'Quadrado') {
+            lado = parseFloat(prompt('Digite o valor do lado do quadrado: '))
+            resultado = (lado * 4)    
+        }
+        else if (tipo == 'Retângulo') {
+            base = parseFloat(prompt('Digite o valor da base do Retângulo: '));
+            altura = parseFloat(prompt('Digite o valor da altura do Retângulo: '));
+            resultado = ((base*2) + (altura*2));
+        }
+        else if (tipo == 'Triângulo') {
+            lado = parseFloat(prompt('Digite o valor do lado do Triângulo: '));
+            resultado = (lado *3);
+        }
+        else if (tipo == 'Circulo') {
+            pi = parseFloat(prompt('Digite o valor do pi: '));
+            raio = parseFloat(prompt('Digite o valor do raio do circulo: '));
+            resultado = (raio * pi);
+        }
+
+        
+        alert('O valor do Perímetro é ' + resultado )
+    </script>
+</body>
+</html>
